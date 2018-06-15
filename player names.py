@@ -3,11 +3,6 @@ from bs4 import BeautifulSoup
 import time
 import csv
 
-class Player():
-	def __init__(self):
-		self.name = ""
-		self.link = ""
-
 player_list = []
 
 driver = webdriver.PhantomJS(executable_path = r'C:\Users\sarim\Desktop\Scraper\phantomjs.exe')
@@ -28,17 +23,17 @@ soup = BeautifulSoup(html_doc, 'lxml')
 players = soup.find('table', class_ = 'list rating')
 player_names = players.find_all('td', class_ = 'nick')
 
+print len(player_names)
+
 add_link = "https://dak.gg"
 
 for i in player_names[0:3]:
-	newPlay = Player()
 	n = i.find('a')
-	l = add_link + n['href']
-	newPlay.link = l
-	newPlay.name = n.text.strip()
-	print newPlay.name
-	print newPlay.link
-	player_list.append(newPlay)
+	l = add_link + n['href'].rsplit('?r=na')[0] + '/2018-06/na/solo-fpp'
+	player_list.append(l)
 
-#print players_names[1]
+print player_list
+
+# driver.get(player_list[0])
+# link = 
 driver.quit()
