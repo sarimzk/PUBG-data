@@ -1,4 +1,5 @@
 # PUBG-data
+![banner1](https://github.com/sarimzk/PUBG-data/blob/master/banner.png)
 A scrape of dak.gg, which is a PUBG (PlayerUnknown's Battlegrounds) leaderboard website, to gather player statistics and explore the generated dataset
 
 ## Scraping The Data
