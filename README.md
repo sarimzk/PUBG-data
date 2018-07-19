@@ -35,6 +35,7 @@ This can be done by executing the python script *player names.py*. Upon executio
   </object>
 </div>                
 
+{% for js in page.customjs %}
 <script type='text/javascript'>
   
   var divElement = document.getElementById('viz1531994547244');                    
@@ -46,3 +47,4 @@ This can be done by executing the python script *player names.py*. Upon executio
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
   
 </script>
+{% endfor %}
