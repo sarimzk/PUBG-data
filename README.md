@@ -35,7 +35,8 @@ This can be done by executing the python script *player names.py*. Upon executio
   </object>
 </div>                
 
-<script type='text/javascript'>                    
+<script type='text/javascript'>
+  
   var divElement = document.getElementById('viz1531994547244');                    
   var vizElement = divElement.getElementsByTagName('object')[0];                         
   vizElement.style.width='100%';
@@ -43,4 +44,5 @@ This can be done by executing the python script *player names.py*. Upon executio
   var scriptElement = document.createElement('script');                    
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  
 </script>
