@@ -12,4 +12,5 @@ First, we visit this link and gather the url for each of the top 100 players' pr
   
 This can be done by executing the python script *player names.py*. Upon execution, it will create a new csv file called *output.csv*, that will contain all the collected statistics for the top hundred players.
 
-<iframe align = "center" width = "1000" height = "1000" src="https://public.tableau.com/views/Names_32/Dashboard1?:embed=y&:display_count=yes&publish=yes"/>
+<iframe src="https://public.tableau.com/views/Names_32/Dashboard1?:showVizHome=no&:embed=true"
+ width="645" height="955"></iframe>
