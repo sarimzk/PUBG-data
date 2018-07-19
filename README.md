@@ -11,3 +11,5 @@ We will be using Selenium along with PhantomJS for accessing the webpages and Be
 First, we visit this link and gather the url for each of the top 100 players' profile page and store them in a list. Then, we visit each link and gather the individual player stats from them, storing them in a list called stats. Finally, we use the csv module to write the files to the storage as a csv (comma separated values) file.  
   
 This can be done by executing the python script *player names.py*. Upon execution, it will create a new csv file called *output.csv*, that will contain all the collected statistics for the top hundred players.
+
+<iframe align = "center" width = "1000" height = "1000" src="https://public.tableau.com/views/Names_32/Dashboard1?:embed=y&:display_count=yes&publish=yes"/>
