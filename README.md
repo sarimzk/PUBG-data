@@ -36,7 +36,7 @@ This can be done by executing the python script *player names.py*. Upon executio
 </div>                
 
 {% for js in page.customjs %}
-<script type='text/javascript'>
+<script type='text/javascript' src="{{ js }}">
   
   var divElement = document.getElementById('viz1531994547244');                    
   var vizElement = divElement.getElementsByTagName('object')[0];                         
